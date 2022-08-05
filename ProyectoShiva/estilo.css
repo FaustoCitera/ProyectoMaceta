@@ -1,0 +1,133 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+.main {
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #07d62a;
+}
+.form {
+    margin-bottom: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 120px;
+}
+.card {
+    box-shadow: 3px solid rgba(34, 34, 34, .7);
+    border-radius: 20px;
+    box-shadow: 0 12px 20px 6px rgb(104 112 118 / 0.08);
+    background-color: white;
+    min-height: 70vh;
+    min-width: 50vw;
+}
+.cardHeader, .cardHeader>h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cardHeader {
+    border-bottom: 1px solid rgba(124, 124, 124, .6);
+}
+.cardBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+}
+
+input {
+    border: 3px solid rgba(124, 124, 124, .7);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1.15rem;
+    transition: .25s all ease;
+    margin: 5px;
+    /* width: 25vw; */
+}
+input:hover {
+    border: 3px solid rgb(24, 24, 24)
+}
+.btnenviar {
+    font-size: 1.15rem;
+    background: #0072F5;
+    border: none;
+    width: fit-content;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.btnContainer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.registrarse 
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.registrarse a {
+    margin-left: 10px;
+}
+
+.formulario
+{
+    margin-top: -10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 3px solid rgba(34, 34, 34, .7);
+    border-radius: 10px;
+    box-shadow: 0 12px 20px 6px rgb(104 112 118 / 0.08);
+    background-color: white;
+    min-height: 70vh;
+    min-width: 30vw;
+}
+
+.registrarseBtn
+{
+    background: #0072F5;
+    border: none;
+    width: fit-content;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.formRegistro
+{
+    margin-bottom: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 120px;
+    text-align: center;
+}
+
+.textRegistro
+{   
+    align-items: left;
+}
+
+.contraseñaRegistro
+{
+    align-items: left;
+}
+
