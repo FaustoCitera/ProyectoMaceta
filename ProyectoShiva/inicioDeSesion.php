@@ -25,7 +25,7 @@
                     <label for="password">Contraseña</label>
                     <input placeholder="Contraseña" type="password" name="password"/>
                     <div class="btnContainer">
-                        <button class="btnenviar" type="submit">Iniciar Sesion</button>
+                        <button class="btnenviar" input type="submit">Iniciar Sesion</button>
                     </div>
                 </form>
             </div>
