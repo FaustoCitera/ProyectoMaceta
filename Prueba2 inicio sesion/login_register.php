@@ -4,7 +4,13 @@ include("conexion.php");
 
 $nombre = $_POST["Usuario"];
 $pass   = $_POST["Contraseña"];
-$Plant = $_POST["Planta"];
+$Plant = $_POST["myPlanta"];
+$NombreCientifico = $_POST["NombreCientifico"];
+$NombreConocido = $_POST["NombreConocido"];
+$Temperatura = $_POST["TemperaturaNecesitada"];
+$Humedad = $_POST["Humedad"];
+$CantidadLuzUV = $_POST["CantidadLuzUV"];
+$Dueño = $_POST["Dueño"];
 
 //Login
 if(isset($_POST["btningresar"]))
@@ -35,15 +41,30 @@ if(isset($_POST["btnregistrar"]))
 	}
 } 
 
-if(isset($_POST["Planta"]))
+if(isset($_POST["myPlanta"]))
 {
-	$query2 = mysqli_query($conn2,"SELECT NombreCientifico FROM planta");
-	$nr2 = mysqli_num_rows($query2);
+	$query = mysqli_query($conn,"SELECT (NombreCientifico,NombreConocido,TemperaturaNecesitada,Humedad,CantidadLuzUV,Dueño) FROM planta WHERE NombreConocido = $Plant");
+	$nr = mysqli_num_rows($query);
 
-	if($nr2==1)
-	{
-		echo "<script> alert('Usted paso a ver la informacion de la planta'); window.location='planta.html' </script>";
-    }
+	if ($nr==1)	
+	{ 
+		echo "<script> alert('Usted paso a ver la informacion de la planta'); window.location='planta.php' </script>";
+    }else
+    {
+	    echo "<script> alert('La planta no existe'); window.location='principal.php' </script>";
+    }	
 }
 
+if(isset($_POST["btnagregarPlanta"]))
+{
+	$sqlgrabar = "INSERT INTO planta (NombreCientifico,NombreConocido,TemperaturaNecesitada,Humedad,CantidadLuzUV,Dueño) values ('$NombreCientifico','$NombreConocido','$Temperatura','$Humedad','$CantidadLuzUV','$Dueño')";
+	
+	if(mysqli_query($conn,$sqlgrabar))
+	{
+		echo "<script> alert('Planta registrado con exito: $NombreConocido'); window.location='principal.php' </script>";
+	}else 
+	{
+		echo "Error: ".$sqlgrabar."<br>".mysql_error($conn);
+	}
+} 
 ?>

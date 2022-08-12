@@ -70,8 +70,8 @@ input[type=submit] {
 
 <p>Busca Tu Planta Aqui:</p>
 
-<form autocomplete="off" action="/action_page.php">
-  <div class="autocomplete" style="width:300px;">
+<form autocomplete="off" action="planta.php" id="search">
+  <div class="autocomplete" name="plantaSeleccionada" style="width:300px;">
     <input id="myInput" type="text" name="myPlanta" placeholder="Planta">
   </div>
   <input type="submit" name="Planta">
@@ -79,7 +79,7 @@ input[type=submit] {
 
 <script>
 function autocomplete(inp, arr) {
-
+ 
   var currentFocus;
 
   inp.addEventListener("input", function(e) {
@@ -160,8 +160,18 @@ var plantas = [
 ];
 
 autocomplete(document.getElementById("myInput"), plantas);
+
+let form = document.getElementById("search");
+form.addEventListener("submit", function(e){
+  e.preventDefault();
+  
+  // Checkeo
+
+  e.target.submit();
+})
+
 </script>
 <a href="index.html" style="float:right">regresar</a>
-
+<a href="crearPlanta.php" style="float:left">Agregar una planta</a>
 </body>
 </html>
