@@ -161,17 +161,8 @@ var plantas = [
 
 autocomplete(document.getElementById("myInput"), plantas);
 
-let form = document.getElementById("search");
-form.addEventListener("submit", function(e){
-  e.preventDefault();
-  
-  // Checkeo
-
-  e.target.submit();
-})
-
 </script>
-<a href="index.html" style="float:right">regresar</a>
+<a href="index.html" style="float:right">Salir de la cuenta</a>
 <a href="crearPlanta.php" style="float:left">Agregar una planta</a>
 </body>
 </html>

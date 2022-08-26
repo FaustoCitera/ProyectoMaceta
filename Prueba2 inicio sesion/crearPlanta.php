@@ -9,7 +9,7 @@
 <body>
 <form action="login_register.php" method="POST">
 <h2>Agregar Planta</h2>
-<input type="text" placeholder="NombreCientifico" name="NombreCientifico" required>
+<input type="text" placeholder="&#128277; NombreCientifico" name="NombreCientifico" required>
 <input type="text" placeholder="NombreConocido" name="NombreConocido" required>
 <input type="number" placeholder="TemperaturaNecesitada" name="TemperaturaNecesitada" required>
 <input type="number" placeholder="Humedad" name="Humedad" required>

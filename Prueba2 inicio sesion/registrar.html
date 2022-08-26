@@ -10,12 +10,28 @@
 <form action="login_register.php" method="POST">
 <h2>Crear una cuenta</h2>
 <input type="text" placeholder="&#128273; Usuario" name="Usuario" required>
-<input type="password" placeholder="&#128274; Contraseña" name="Contraseña" required>
+<input type="password" placeholder="&#128274; Contraseña" name="Contraseña" id="password" required>
+<button class="btn btn-primary" type="button" onclick="mostrarContrasena()">Mostrar Contraseña</button>
+</div>
+<div class="col">
 <input type="submit" value="Registrar" name="btnregistrar">
+</div>
+
 
 <br>
-<a href="index.html" style="float:right">Regresar</a>
+<a href="index.html" style="float:right">¿Ya tienes una cuenta? Inicia Sesion</a>
 
 </form>
 </body>
 </html>
+
+<script>
+    function mostrarContrasena(){
+        var tipo = document.getElementById("password");
+        if(tipo.type == "password"){
+            tipo.type = "text";
+        }else{
+            tipo.type = "password";
+        }
+    }
+  </script>

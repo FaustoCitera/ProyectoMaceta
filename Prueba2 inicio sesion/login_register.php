@@ -4,7 +4,6 @@ include("conexion.php");
 
 $nombre = $_POST["Usuario"];
 $pass   = $_POST["Contraseña"];
-$Plant = $_POST["myPlanta"];
 $NombreCientifico = $_POST["NombreCientifico"];
 $NombreConocido = $_POST["NombreConocido"];
 $Temperatura = $_POST["TemperaturaNecesitada"];
@@ -41,20 +40,7 @@ if(isset($_POST["btnregistrar"]))
 	}
 } 
 
-if(isset($_POST["myPlanta"]))
-{
-	$query = mysqli_query($conn,"SELECT (NombreCientifico,NombreConocido,TemperaturaNecesitada,Humedad,CantidadLuzUV,Dueño) FROM planta WHERE NombreConocido = $Plant");
-	$nr = mysqli_num_rows($query);
-
-	if ($nr==1)	
-	{ 
-		echo "<script> alert('Usted paso a ver la informacion de la planta'); window.location='planta.php' </script>";
-    }else
-    {
-	    echo "<script> alert('La planta no existe'); window.location='principal.php' </script>";
-    }	
-}
-
+//CrearPlanta
 if(isset($_POST["btnagregarPlanta"]))
 {
 	$sqlgrabar = "INSERT INTO planta (NombreCientifico,NombreConocido,TemperaturaNecesitada,Humedad,CantidadLuzUV,Dueño) values ('$NombreCientifico','$NombreConocido','$Temperatura','$Humedad','$CantidadLuzUV','$Dueño')";
