@@ -1,0 +1,238 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+body, html
+
+.main {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background:"Fondo para proyeto.jpg";
+}
+.autocomplete-items {
+    width: 85%;
+    position: relative;
+    text-align: center;
+}
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  .autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+  }
+  .autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+  }
+.autocomplete {
+
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin: 10px;
+    position: relative;
+  }
+  
+  .forminicial {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.form {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*align-items: center;*/
+    margin: 30px;
+}
+.formInfoContainer>div {
+    margin: 10px;
+}
+.formInfoContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.formInfo {
+    align-items: left;
+    margin-bottom: 50px;
+    /*width: 40%;*/
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin: 10px;
+}
+.card {
+    box-shadow: 3px solid rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 12px 20px 6px rgb(104 112 118 / 0.08);
+    background-color: white;
+    min-height: 70vh;
+    min-width: 50vw;
+}
+.cardHeader, .cardHeader>h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cardHeader {
+    border-bottom: 3px solid rgba(3, 3, 3, 0.6);
+}
+.cardBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+input {
+    border: 3px solid rgba(124, 124, 124, .7);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1.15rem;
+    transition: .25s all ease;
+    margin: 8px;
+    width: 95%;
+}
+input:hover {
+    border: 3px solid rgb(24, 24, 24)
+}
+.btnenviar {
+    cursor: pointer;
+    font-size: 1.15rem;
+    background: #0072F5;
+    border: none;
+    width: fit-content;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.btnContainer {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    
+}
+.registrarse 
+{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.registrarse.prueba
+{
+    width: 85%;
+    text-align: left;
+    justify-content: space-around;
+}
+
+.registrarse.prueba a {
+    width: 100%;
+}
+
+.registrarse a {
+    margin-left: 10px;
+}
+
+.formulario
+{
+    margin-top: -10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 3px solid rgba(34, 34, 34, .7);
+    border-radius: 10px;
+    box-shadow: 0 12px 20px 6px rgb(104 112 118 / 0.08);
+    background-color: white;
+    min-height: 70vh;
+    min-width: 30vw;
+}
+
+.registrarseBtn
+{
+    cursor: pointer;
+    font-size: 1.15rem;
+    background: #0072F5;
+    border: none;
+    width: fit-content;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.formRegistro
+{
+    margin-bottom: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 120px;
+    text-align: center;
+}
+
+.textRegistro
+{   
+    align-items: left;
+}
+
+.contraseñaRegistro
+{
+
+    align-items: left;
+}
+
+.btnPlanta
+{
+    width: 25%;
+    border-radius: 10%;
+    
+}
+
+.widthLabel
+{
+    width:auto !important;
+}
+
+.registrarseExtra
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.inputAuto
+{
+    border: 3px solid rgba(124, 124, 124, .7);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.15rem;
+    transition: .25s all ease;
+    margin: 8px;
+    width: 38%;
+}
+.Generalauto
+{
+    flex-direction: column;
+}
